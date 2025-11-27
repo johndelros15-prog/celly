@@ -17,7 +17,7 @@ const products = {
     },
     choc2: {
         name: "Ruby Chocolate Hearts",
-        price: 1200.00,
+        price: 700.00,
         category: "chocolates",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi0zNz5SdVv-iQQuuyW2Tzg0u9zhoawny6RcuBFSj1geESEPoe2e4IIkDd1N1G9Fpu-8w&usqp=CAU",
         description: "Experience the unique taste of ruby chocolate - naturally pink with a delightful berry flavor. Shaped into beautiful hearts, perfect for special occasions.",
@@ -56,7 +56,7 @@ const products = {
     },
     choc5: {
         name: "Gold Leaf Chocolate Box",
-        price: 2500.00,
+        price: 1500.00,
         category: "chocolates",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLSFFhJzmmkdrPVGVmqE92jgJrgQtfHZp0oQ&s",
         description: "Luxurious chocolate assortment adorned with 24k edible gold leaf. The ultimate gift for chocolate connoisseurs.",
