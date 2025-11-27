@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celly's Daily Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Floating flowers background effect -->
+    <div class="flowers-container">
+        <div class="flower">🌸</div>
+        <div class="flower">🌺</div>
+        <div class="flower">🌷</div>
+        <div class="flower">🌹</div>
+        <div class="flower">🌻</div>
+        <div class="flower">🌼</div>
+    </div>
+
+    <!-- Header with logo -->
+    <header>
+        <div class="logo-container">
+            <div class="logo">
+                <span class="logo-text">Celly's Daily Store</span>
+                <div class="logo-decoration">
+                    <span class="sparkle">✨</span>
+                    <span class="heart">💕</span>
+                    <span class="sparkle">✨</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Category navigation -->
+    <nav class="category-nav">
+        <button class="category-btn active" data-category="chocolates">
+            <i class="fas fa-cookie-bite"></i>
+            Chocolates
+        </button>
+        <button class="category-btn" data-category="plushies">
+            <i class="fas fa-heart"></i>
+            Plushies
+        </button>
+        <button class="category-btn" data-category="flowers">
+            <i class="fas fa-flower"></i>
+            Flowers
+        </button>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+        <!-- Chocolates Category -->
+        <section id="chocolates" class="category-section active">
+            <h2 class="category-title">🍫 Premium Chocolates 🍫</h2>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-product-id="choc1">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1549007994-cb92caebd54b?w=400&h=300&fit=crop" alt="Belgian Dark Chocolate Truffles">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Belgian Dark Chocolate Truffles</h3>
+                        <p class="price">₱850.00</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-product-id="choc2">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1623660053974-9f0c1a37e2ab?w=400&h=300&fit=crop" alt="Ruby Chocolate Hearts">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Ruby Chocolate Hearts</h3>
+                        <p class="price">₱1,200.00</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-product-id="choc3">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1575377427642-087cf684f29d?w=400&h=300&fit=crop" alt="Artisan Milk Chocolate Bars">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Artisan Milk Chocolate Bars</h3>
+                        <p class="price">₱450.00</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" data-product-id="choc4">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?w=400&h=300&fit=crop" alt="White Chocolate Strawberries">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>White Chocolate Strawberries</h3>
+                        <p class="price">₱680.00</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card" data-product-id="choc5">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1553452118-621e1f860f43?w=400&h=300&fit=crop" alt="Gold Leaf Chocolate Box">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Gold Leaf Chocolate Box</h3>
+                        <p class="price">₱2,500.00</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Plushies Category -->
+        <section id="plushies" class="category-section">
+            <h2 class="category-title">🧸 Cute Plushies 🧸</h2>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-product-id="plush1">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1556012018-50c5c0da73bf?w=400&h=300&fit=crop" alt="Giant Teddy Bear">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Giant Teddy Bear</h3>
+                        <p class="price">₱1,850.00</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-product-id="plush2">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop" alt="Bunny Plushie">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Bunny Plushie</h3>
+                        <p class="price">₱750.00</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-product-id="plush3">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1603575449962-aa83e445d9b8?w=400&h=300&fit=crop" alt="Unicorn Plushie">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Unicorn Plushie</h3>
+                        <p class="price">₱950.00</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" data-product-id="plush4">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1611606063065-ee7946f0b343?w=400&h=300&fit=crop" alt="Panda Plushie">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Panda Plushie</h3>
+                        <p class="price">₱680.00</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card" data-product-id="plush5">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1597851065532-055c62e1773d?w=400&h=300&fit=crop" alt="Cat Plushie">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Cat Plushie</h3>
+                        <p class="price">₱580.00</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Flowers Category -->
+        <section id="flowers" class="category-section">
+            <h2 class="category-title">🌸 Fresh Flowers 🌸</h2>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-product-id="flower1">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=400&h=300&fit=crop" alt="Red Rose Bouquet">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Red Rose Bouquet</h3>
+                        <p class="price">₱1,500.00</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-product-id="flower2">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?w=400&h=300&fit=crop" alt="Sunflower Bouquet">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Sunflower Bouquet</h3>
+                        <p class="price">₱850.00</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-product-id="flower3">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?w=400&h=300&fit=crop" alt="Tulip Arrangement">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Tulip Arrangement</h3>
+                        <p class="price">₱1,200.00</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" data-product-id="flower4">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=400&h=300&fit=crop" alt="Peony Bouquet">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Peony Bouquet</h3>
+                        <p class="price">₱1,800.00</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card" data-product-id="flower5">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1462275646964-a0e3386b89fa?w=400&h=300&fit=crop" alt="Mixed Flower Basket">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Mixed Flower Basket</h3>
+                        <p class="price">₱2,200.00</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- My Orders Button -->
+    <button class="my-orders-btn" id="myOrdersBtn">
+        <i class="fas fa-shopping-bag"></i>
+        <span class="order-count">0</span>
+    </button>
+
+    <!-- Product Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <!-- Orders Modal -->
+    <div id="ordersModal" class="modal">
+        <div class="modal-content orders-modal">
+            <span class="close">&times;</span>
+            <h2>My Orders</h2>
+            <div id="ordersList"></div>
+            <div class="orders-total">
+                <strong>Total: ₱<span id="ordersTotal">0.00</span></strong>
+            </div>
+            <button id="checkoutBtn" class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div id="paymentModal" class="modal">
+        <div class="modal-content payment-modal">
+            <span class="close">&times;</span>
+            <h2>Payment Method</h2>
+            <div class="payment-options">
+                <button class="payment-option" data-method="gcash">
+                    <img src="https://gcash.com/wp-content/uploads/2019/08/logo-gcash.png" alt="GCash">
+                    GCash
+                </button>
+                <button class="payment-option" data-method="paymaya">
+                    <img src="https://cdn.paymaya.com/assets/2020/06/PayMaya-Logo.png" alt="PayMaya">
+                    PayMaya
+                </button>
+                <button class="payment-option" data-method="cod">
+                    <i class="fas fa-money-bill-wave"></i>
+                    Cash on Delivery
+                </button>
+            </div>
+            <div id="paymentForm" class="payment-form" style="display: none;">
+                <h3 id="paymentTitle"></h3>
+                <form id="checkoutForm">
+                    <input type="text" id="customerName" placeholder="Your Name" required>
+                    <input type="tel" id="customerNumber" placeholder="Phone Number" required>
+                    <input type="email" id="customerEmail" placeholder="Email Address" required>
+                    <textarea id="deliveryAddress" placeholder="Delivery Address" required></textarea>
+                    <button type="submit" class="submit-order-btn">Place Order</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content success-modal">
+            <div class="success-icon">✨</div>
+            <h2>Order Placed Successfully!</h2>
+            <p>Thank you for your order! This is only a demo store.</p>
+            <button id="closeSuccess" class="close-success-btn">Close</button>
+        </div>
+    </div>
+
+    <script src="celly.js"></script>
+</body>
+</html>
