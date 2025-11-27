@@ -365,5 +365,13 @@
     </div>
 
     <script src="celly.js"></script>
+    <script>
+  document.getElementById('checkoutBtn').addEventListener('click', () => {
+    if (cart.length === 0) { alert('Your cart is empty!'); return; }
+    document.getElementById('ordersModal').style.display = 'none';
+    document.getElementById('paymentModal').style.display = 'block';
+  });
+    </script>
+    
 </body>
 </html>
